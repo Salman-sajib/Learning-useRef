@@ -31,18 +31,37 @@ function App() {
   }
 
   return (
-    <>
-      <button onClick={handleClick1}>Click me!</button>
-      <input ref={inputRef1} type='text' />
-      <br />
+    <div className='bg-teal-100 min-h-svh flex flex-col gap-2 items-center justify-center'>
+      <div>
+        <button
+          className='bg-violet-500 px-5 py-2 rounded mr-3 text-white'
+          onClick={handleClick1}
+        >
+          Click me!
+        </button>
+        <input className='border p-2 rounded' ref={inputRef1} type='text' />
+      </div>
 
-      <button onClick={handleClick2}>Click me!</button>
-      <input ref={inputRef2} type='text' />
-      <br />
+      <div>
+        <button
+          className='bg-violet-500 px-5 py-2 rounded mr-3 text-white'
+          onClick={handleClick2}
+        >
+          Click me!
+        </button>
+        <input className='border p-2 rounded' ref={inputRef2} type='text' />
+      </div>
 
-      <button onClick={handleClick3}>Click me!</button>
-      <input ref={inputRef3} type='text' />
-    </>
+      <div>
+        <button
+          className='bg-violet-500 px-5 py-2 rounded mr-3 text-white'
+          onClick={handleClick3}
+        >
+          Click me!
+        </button>
+        <input className='border p-2 rounded' ref={inputRef3} type='text' />
+      </div>
+    </div>
   );
 }
 
